@@ -1,0 +1,55 @@
+# ==============================================================================
+# Heritage AI Decay Monitoring - Annotation Assistant Configuration
+# ==============================================================================
+
+dataset:
+  raw_root: "c:\\Users\\subaj\\OneDrive\\Desktop\\intern\\TEMPLE"
+  manifest_path: "c:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\dataset\\annotation_manifest.json"
+  duplicates_path: "c:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\dataset\\duplicates_manifest.json"
+
+paths:
+  proposals_dir: "c:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\annotations\\proposals"
+  review_dir: "c:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\annotations\\review"
+  raw_annotations_dir: "c:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\annotations\\raw"
+  converted_annotations_dir: "c:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\annotations\\converted"
+  flagged_csv: "c:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\annotations\\flagged_for_review.csv"
+  qc_previews_dir: "c:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\docs\\qc_previews"
+
+# Standard 4 Project Classes (Consistent Class IDs)
+classes:
+  - id: 0
+    name: "Normal"
+    color: "#22c55e" # Green
+    description: "Undamaged masonry surface, zero defect bounding boxes"
+  - id: 1
+    name: "Crack"
+    color: "#ef4444" # Red
+    description: "Structural fracture, surface fissure, joint opening"
+  - id: 2
+    name: "Moss"
+    color: "#16a34a" # Emerald Green
+    description: "Biological growth, algae, lichen patches on stone"
+  - id: 3
+    name: "Seepage"
+    color: "#0284c7" # Sky Blue
+    description: "Water stains, dampness, moisture streaks, efflorescence"
+
+# Confidence & Verification Policy
+# Note: auto_accept_threshold is set to 1.0 (disabled) so NO AI proposal becomes ground truth automatically!
+confidence_policy:
+  auto_accept_threshold: 1.0   # 1.0 means NEVER auto-accept without human review
+  review_threshold: 0.50       # Proposals above 0.50 are displayed for review
+  reject_threshold: 0.35       # Proposals below 0.35 are discarded
+
+# Proposal Generation Parameters
+proposal_generator:
+  downsample_max_dim: 1024     # Downsample for fast feature analysis while mapping boxes to original resolution
+  nms_iou_threshold: 0.40      # Non-maximum suppression IoU threshold to prune overlapping proposals
+  min_box_size_px: 40          # Minimum box dimension in original image scale
+  max_box_coverage_pct: 0.85   # Reject proposals covering >85% of image (unless verified manually)
+
+# Web Review Interface
+review_server:
+  host: "127.0.0.1"
+  port: 5500
+  debug: false

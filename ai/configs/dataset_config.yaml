@@ -1,0 +1,68 @@
+# ==============================================================================
+# Heritage AI Decay Monitoring - Dataset Configuration
+# Phase 1 Local Inspection Results & Preprocessing Settings
+# ==============================================================================
+
+dataset:
+  name: "Tamil Nadu Ancient Monuments & Temples Dataset"
+  raw_root_env_var: "DATASET_ROOT"
+  raw_root_default: "../TEMPLE"
+  
+  # Phase 1 Inspection Statistics
+  inspection_status: "ANNOTATION REQUIRED BEFORE PHASE 2"
+  total_raw_images: 325
+  total_unique_images: 307
+  duplicate_images_count: 18 # 18 duplicate pairs in 'sakkarathu alwar near mrng star schl_'
+  corrupted_images_count: 0
+  image_format: "JPEG"
+  file_extension: ".jpg"
+  
+  # Dimensions detected in local dataset
+  resolutions:
+    - resolution: "3072x4096"
+      orientation: "Portrait"
+      count: 286
+    - resolution: "4096x3072"
+      orientation: "Landscape"
+      count: 39
+
+  # Sites / Locations in local directory structure
+  sites:
+    - name: "big temple"
+      image_count: 217
+    - name: "sakkarathu alwar near mrng star schl_"
+      image_count: 36 # 18 unique + 18 copies
+    - name: "kasiviswa nadhar therku vedhi rd , next to micheal tea shop"
+      image_count: 25
+    - name: "market hanuman"
+      image_count: 17
+    - name: "rathnagirishwarar kovil near peter school"
+      image_count: 16
+    - name: "Ramar kovil therku vidhi , next to kasi viswa kovil"
+      image_count: 14
+
+  # Target Split Requirements (to be applied after annotation)
+  split:
+    train_ratio: 0.70
+    validation_ratio: 0.20
+    test_ratio: 0.10
+    stratified: true
+
+# Preprocessing Pipeline (Senmozhi Work II, Step 2)
+preprocessing:
+  target_size: [300, 300] # SSD standard input size (or [512, 512])
+  color_mode: "RGB"
+  denoising:
+    enabled: true
+    method: "gaussian_and_median" # Senmozhi Step 2.3
+  contrast_enhancement:
+    enabled: true
+    method: "clahe_or_histogram_equalization" # Senmozhi Step 2.2 / Architecture
+  normalization:
+    mean: [0.485, 0.456, 0.406]
+    std: [0.229, 0.224, 0.225]
+
+# Annotation Format
+annotation:
+  target_format: "pascal_voc" # or "coco_json" for SSD
+  annotations_dir: "./ai/annotations"

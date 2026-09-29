@@ -1,0 +1,50 @@
+# ==============================================================================
+# Heritage AI Decay Monitoring - Class Configuration
+# Primary Source: Senmozhi Project Proposal (Work II, Page 8-13)
+# ==============================================================================
+
+# Required 4 Project Classes (Consistent project-wide IDs)
+project_classes:
+  - id: 0
+    name: "Normal"
+    description: "Undamaged monument surface, baseline stone/brick texture"
+    severity_default: "Low"
+    action_recommendation: "Routine periodic monitoring and preventative maintenance"
+
+  - id: 1
+    name: "Crack"
+    description: "Structural fracture, fissure, or micro-crack on surface"
+    severity_default: "High"
+    action_recommendation: "Severe damage; need immediate structural inspection and grouting/stabilization"
+
+  - id: 2
+    name: "Moss"
+    description: "Biological growth, moss, algae, or lichen colonization"
+    severity_default: "Medium"
+    action_recommendation: "Moderate damage; need immediate biocidal cleaning and moisture control"
+
+  - id: 3
+    name: "Seepage"
+    description: "Water infiltration, moisture seepage, efflorescence, or damp staining"
+    severity_default: "High"
+    action_recommendation: "High risk of core masonry deterioration; need drainage inspection and waterproofing treatment"
+
+# Internal Model Anchor Background Handling:
+# In object detection (SSD), background is handled internally during anchor matching.
+# Background is NOT treated as one of the four project classes.
+ssd_internal_background:
+  handling_mode: "internal_anchor_label"
+  internal_class_index: -1 # or offset +1 during training tensors: [bg=0, normal=1, crack=2, moss=3, seepage=4]
+  note: "Mapped transparently by dataset loader so project classes remain 0..3"
+
+# Risk Categorization Levels (Senmozhi Work II, Page 10)
+risk_levels:
+  - level: "Low"
+    description: "Minor superficial wear, Normal surface condition"
+    color: "#22c55e" # Green
+  - level: "Medium"
+    description: "Biological growth (Moss) or localized surface defects"
+    color: "#eab308" # Yellow / Amber
+  - level: "High"
+    description: "Structural fractures (Crack) or severe moisture (Seepage)"
+    color: "#ef4444" # Red

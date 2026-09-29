@@ -1,0 +1,33 @@
+{
+  "filename": "IMG_20260609_074320-2.jpg",
+  "rel_path": "big temple\\IMG_20260609_074320-2.jpg",
+  "site": "big temple",
+  "width": 3072,
+  "height": 4096,
+  "status": "REVIEW_REQUIRED",
+  "boxes": [
+    {
+      "xmin": 2464.0,
+      "ymin": 3744.0,
+      "xmax": 2656.0,
+      "ymax": 4000.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.59,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2080.0,
+      "ymin": 992.0,
+      "xmax": 2336.0,
+      "ymax": 1120.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    }
+  ],
+  "reviewer": null,
+  "review_timestamp": null,
+  "notes": null
+}

@@ -1,0 +1,11 @@
+{
+  "total_images": 307,
+  "proposed_normal": 1,
+  "review_required_with_proposals": 306,
+  "total_proposals": 4388,
+  "proposals_by_class": {
+    "Crack": 286,
+    "Moss": 295,
+    "Seepage": 3807
+  }
+}

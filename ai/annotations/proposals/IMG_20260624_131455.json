@@ -1,0 +1,83 @@
+{
+  "filename": "IMG_20260624_131455.jpg",
+  "rel_path": "rathnagirishwarar kovil near peter school\\IMG_20260624_131455.jpg",
+  "site": "rathnagirishwarar kovil near peter school",
+  "width": 3072,
+  "height": 4096,
+  "status": "REVIEW_REQUIRED",
+  "boxes": [
+    {
+      "xmin": 672.0,
+      "ymin": 2336.0,
+      "xmax": 800.0,
+      "ymax": 2528.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.73,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 32.0,
+      "ymin": 1888.0,
+      "xmax": 480.0,
+      "ymax": 2144.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.72,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2400.0,
+      "ymin": 2272.0,
+      "xmax": 2528.0,
+      "ymax": 2528.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.69,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 32.0,
+      "ymin": 2080.0,
+      "xmax": 352.0,
+      "ymax": 2528.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.68,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 608.0,
+      "ymin": 3552.0,
+      "xmax": 928.0,
+      "ymax": 3680.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.64,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 480.0,
+      "ymin": 992.0,
+      "xmax": 800.0,
+      "ymax": 1120.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.62,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 288.0,
+      "ymin": 2400.0,
+      "xmax": 416.0,
+      "ymax": 2592.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.62,
+      "source": "AI_PROPOSAL"
+    }
+  ],
+  "reviewer": null,
+  "review_timestamp": null,
+  "notes": null
+}

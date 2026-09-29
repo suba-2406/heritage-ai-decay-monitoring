@@ -1,0 +1,63 @@
+{
+  "filename": "IMG_20260609_075904-2.jpg",
+  "rel_path": "big temple\\IMG_20260609_075904-2.jpg",
+  "site": "big temple",
+  "width": 3072,
+  "height": 4096,
+  "status": "REVIEW_REQUIRED",
+  "boxes": [
+    {
+      "xmin": 1440.0,
+      "ymin": 1376.0,
+      "xmax": 1568.0,
+      "ymax": 1568.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.63,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 928.0,
+      "ymin": 0.0,
+      "xmax": 1120.0,
+      "ymax": 96.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2848.0,
+      "ymin": 2656.0,
+      "xmax": 2976.0,
+      "ymax": 2848.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1888.0,
+      "ymin": 0.0,
+      "xmax": 2080.0,
+      "ymax": 96.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.57,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1376.0,
+      "ymin": 1696.0,
+      "xmax": 1568.0,
+      "ymax": 1888.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.56,
+      "source": "AI_PROPOSAL"
+    }
+  ],
+  "reviewer": null,
+  "review_timestamp": null,
+  "notes": null
+}
