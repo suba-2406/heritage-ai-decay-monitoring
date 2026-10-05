@@ -1,0 +1,61 @@
+{
+  "dataset_name": "Heritage AI Decay Monitoring - Processed Dataset",
+  "target_resolution": [
+    320,
+    320
+  ],
+  "total_canonical_images": 307,
+  "total_boxes": 4593,
+  "classes": {
+    "Normal": 0,
+    "Crack": 1,
+    "Moss": 2,
+    "Seepage": 3
+  },
+  "class_box_distribution": {
+    "Seepage": 3940,
+    "Crack": 332,
+    "Moss": 321
+  },
+  "image_level_dominant_distribution": {
+    "Crack": 97,
+    "Seepage": 205,
+    "Normal": 4,
+    "Moss": 1
+  },
+  "splits": {
+    "train": {
+      "image_count": 215,
+      "normal_images": 2,
+      "defect_images": 213,
+      "total_boxes": 3238,
+      "box_distribution": {
+        "Seepage": 2752,
+        "Crack": 243,
+        "Moss": 243
+      }
+    },
+    "val": {
+      "image_count": 47,
+      "normal_images": 1,
+      "defect_images": 46,
+      "total_boxes": 691,
+      "box_distribution": {
+        "Seepage": 617,
+        "Crack": 39,
+        "Moss": 35
+      }
+    },
+    "test": {
+      "image_count": 45,
+      "normal_images": 1,
+      "defect_images": 44,
+      "total_boxes": 664,
+      "box_distribution": {
+        "Seepage": 571,
+        "Moss": 43,
+        "Crack": 50
+      }
+    }
+  }
+}

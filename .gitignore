@@ -62,6 +62,13 @@ data/raw/
 *.tiff
 *.zip
 *.tar.gz
+inference_outputs/
+outputs/
+
+# Allow frontend sample images
+!frontend/src/samples/
+!frontend/src/samples/*
+
 
 # Node / Frontend
 node_modules/

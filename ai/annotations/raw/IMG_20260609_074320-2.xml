@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<annotation>
+  <folder>big temple</folder>
+  <filename>IMG_20260609_074320-2.jpg</filename>
+  <path>c:\Users\subaj\OneDrive\Desktop\intern\TEMPLE\big temple\IMG_20260609_074320-2.jpg</path>
+  <source>
+    <database>Tamil Nadu Heritage Monuments</database>
+  </source>
+  <size>
+    <width>3072</width>
+    <height>4096</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Seepage</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>2464</xmin>
+      <ymin>3744</ymin>
+      <xmax>2656</xmax>
+      <ymax>4000</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>Crack</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>2080</xmin>
+      <ymin>992</ymin>
+      <xmax>2336</xmax>
+      <ymax>1120</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>Seepage</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>536</xmin>
+      <ymin>3582</ymin>
+      <xmax>1042</xmax>
+      <ymax>4019</ymax>
+    </bndbox>
+  </object>
+</annotation>

@@ -1,0 +1,53 @@
+{
+  "filename": "IMG_20260622_173552.jpg",
+  "rel_path": "big temple\\IMG_20260622_173552.jpg",
+  "site": "big temple",
+  "width": 3072,
+  "height": 4096,
+  "status": "VERIFIED_DEFECT",
+  "boxes": [
+    {
+      "xmin": 2336.0,
+      "ymin": 2208.0,
+      "xmax": 2528.0,
+      "ymax": 2336.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.64,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2464.0,
+      "ymin": 3616.0,
+      "xmax": 2912.0,
+      "ymax": 4096.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.64,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2144.0,
+      "ymin": 3232.0,
+      "xmax": 2528.0,
+      "ymax": 3552.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.62,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 672.0,
+      "ymin": 3680.0,
+      "xmax": 864.0,
+      "ymax": 4000.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.6,
+      "source": "AI_PROPOSAL"
+    }
+  ],
+  "reviewer": "Human Reviewer",
+  "review_timestamp": "2026-09-29T17:51:25.621Z",
+  "notes": null
+}

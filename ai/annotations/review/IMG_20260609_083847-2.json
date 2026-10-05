@@ -1,0 +1,123 @@
+{
+  "filename": "IMG_20260609_083847-2.jpg",
+  "rel_path": "big temple\\IMG_20260609_083847-2.jpg",
+  "site": "big temple",
+  "width": 3072,
+  "height": 4096,
+  "status": "VERIFIED_DEFECT",
+  "boxes": [
+    {
+      "xmin": 0.0,
+      "ymin": 352.0,
+      "xmax": 3072.0,
+      "ymax": 800.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.74,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 544.0,
+      "ymin": 3168.0,
+      "xmax": 2720.0,
+      "ymax": 4096.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.7,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1120.0,
+      "ymin": 2016.0,
+      "xmax": 1504.0,
+      "ymax": 2272.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.69,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1696.0,
+      "ymin": 2080.0,
+      "xmax": 1952.0,
+      "ymax": 2336.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.68,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 0.0,
+      "ymin": 736.0,
+      "xmax": 2720.0,
+      "ymax": 1568.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1312.0,
+      "ymin": 1312.0,
+      "xmax": 1760.0,
+      "ymax": 1760.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.61,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2656.0,
+      "ymin": 3488.0,
+      "xmax": 2784.0,
+      "ymax": 3680.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.61,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2656.0,
+      "ymin": 3680.0,
+      "xmax": 2784.0,
+      "ymax": 4096.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.6,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 544.0,
+      "ymin": 1952.0,
+      "xmax": 672.0,
+      "ymax": 2144.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.59,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1184.0,
+      "ymin": 1376.0,
+      "xmax": 1376.0,
+      "ymax": 1504.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2333.0,
+      "ymin": 1568.0,
+      "xmax": 2916.0,
+      "ymax": 2999.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    }
+  ],
+  "reviewer": "Human Reviewer",
+  "review_timestamp": "2026-09-29T17:43:46.741Z",
+  "notes": null
+}

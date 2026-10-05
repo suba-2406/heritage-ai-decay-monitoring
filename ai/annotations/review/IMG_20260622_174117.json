@@ -1,0 +1,163 @@
+{
+  "filename": "IMG_20260622_174117.jpg",
+  "rel_path": "big temple\\IMG_20260622_174117.jpg",
+  "site": "big temple",
+  "width": 3072,
+  "height": 4096,
+  "status": "VERIFIED_DEFECT",
+  "boxes": [
+    {
+      "xmin": 0.0,
+      "ymin": 0.0,
+      "xmax": 1312.0,
+      "ymax": 544.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.69,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1568.0,
+      "ymin": 0.0,
+      "xmax": 3072.0,
+      "ymax": 480.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.68,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2784.0,
+      "ymin": 2336.0,
+      "xmax": 2976.0,
+      "ymax": 2592.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.68,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 928.0,
+      "ymin": 480.0,
+      "xmax": 3072.0,
+      "ymax": 2208.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 0.0,
+      "ymin": 672.0,
+      "xmax": 992.0,
+      "ymax": 1312.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1184.0,
+      "ymin": 2016.0,
+      "xmax": 1312.0,
+      "ymax": 2272.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2848.0,
+      "ymin": 1760.0,
+      "xmax": 3072.0,
+      "ymax": 2080.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.66,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 0.0,
+      "ymin": 1120.0,
+      "xmax": 1248.0,
+      "ymax": 2016.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1120.0,
+      "ymin": 1312.0,
+      "xmax": 1376.0,
+      "ymax": 1568.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 416.0,
+      "ymin": 1760.0,
+      "xmax": 1120.0,
+      "ymax": 2272.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 0.0,
+      "ymin": 2336.0,
+      "xmax": 288.0,
+      "ymax": 2848.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.64,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1696.0,
+      "ymin": 1184.0,
+      "xmax": 1824.0,
+      "ymax": 1440.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.63,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1888.0,
+      "ymin": 1632.0,
+      "xmax": 2016.0,
+      "ymax": 1824.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.63,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1632.0,
+      "ymin": 1824.0,
+      "xmax": 1824.0,
+      "ymax": 2080.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.63,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 544.0,
+      "ymin": 2208.0,
+      "xmax": 736.0,
+      "ymax": 2400.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.63,
+      "source": "AI_PROPOSAL"
+    }
+  ],
+  "reviewer": "Human Reviewer",
+  "review_timestamp": "2026-09-29T17:51:28.280Z",
+  "notes": null
+}

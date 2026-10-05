@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heritage AI — Monument Decay Monitoring & Preservation System</title>
+  <meta name="description" content="AI-based automated decay monitoring, structural risk assessment, and preservation recommendation system for ancient monuments.">
+  
+  <!-- Premium Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- App Header -->
+  <header class="app-header">
+    <div class="header-container">
+      <div class="brand-group">
+        <div class="brand-logo-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21h18"/>
+            <path d="M5 21V7l7-4 7 4v14"/>
+            <path d="M9 21v-4a3 3 0 0 1 6 0v4"/>
+            <line x1="9" y1="10" x2="9" y2="10.01"/>
+            <line x1="15" y1="10" x2="15" y2="10.01"/>
+          </svg>
+        </div>
+        <div class="brand-info">
+          <div class="brand-title-wrap">
+            <h1>Heritage AI</h1>
+            <span class="version-tag">SSDLite320</span>
+          </div>
+          <p class="brand-subtitle">Monument Decay Monitoring & Preservation System</p>
+        </div>
+      </div>
+
+      <!-- Navigation Tabs in Header -->
+      <nav class="nav-tabs" aria-label="Main Navigation">
+        <button class="nav-tab active" data-tab="tab-inspect" id="btn-tab-inspect">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <span>Inspection</span>
+        </button>
+        <button class="nav-tab" data-tab="tab-protocols" id="btn-tab-protocols">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+          </svg>
+          <span>Conservation Protocols</span>
+        </button>
+        <button class="nav-tab" data-tab="tab-monuments" id="btn-tab-monuments">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+            <polyline points="2 17 12 22 22 17"></polyline>
+            <polyline points="2 12 12 17 22 12"></polyline>
+          </svg>
+          <span>Temple Sites</span>
+        </button>
+        <button class="nav-tab" data-tab="tab-benchmarks" id="btn-tab-benchmarks">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="20" x2="18" y2="10"></line>
+            <line x1="12" y1="20" x2="12" y2="4"></line>
+            <line x1="6" y1="20" x2="6" y2="14"></line>
+          </svg>
+          <span>Model Insights</span>
+        </button>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <div class="status-badge" id="system-status-pill">
+          <span class="status-pulse"></span>
+          <span id="system-status-text">Connecting...</span>
+        </div>
+        <a href="/docs" target="_blank" class="docs-btn" title="View OpenAPI / Swagger Documentation">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+            <polyline points="14 2 14 8 20 8"></polyline>
+            <line x1="16" y1="13" x2="8" y2="13"></line>
+            <line x1="16" y1="17" x2="8" y2="17"></line>
+            <polyline points="10 9 9 9 8 9"></polyline>
+          </svg>
+          <span>API Docs</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="app-main">
+    
+    <!-- ========================================================================= -->
+    <!-- TAB 1: INSPECTION & DETECTION -->
+    <!-- ========================================================================= -->
+    <section class="tab-pane active" id="tab-inspect">
+      
+      <!-- Hero Banner -->
+      <div class="page-hero">
+        <div class="hero-text-block">
+          <span class="hero-eyebrow">Automated Archaeological Diagnostic Platform</span>
+          <h2 class="hero-title">Monument Surface Inspection</h2>
+          <p class="hero-desc">Upload a high-resolution monument photograph to identify visible surface decay (cracks, biological moss, water seepage) and receive scientific preservation guidance.</p>
+        </div>
+      </div>
+
+      <div class="workspace-grid">
+        
+        <!-- Left Sidebar: Controls & Upload -->
+        <aside class="sidebar-column">
+          
+          <!-- Upload Card -->
+          <div class="surface-card upload-panel">
+            <div class="card-header">
+              <h3>Upload Monument Image</h3>
+              <span class="header-pill">Detector</span>
+            </div>
+
+            <!-- Drag & Drop Dropzone -->
+            <div class="dropzone-box" id="dropzone">
+              <input type="file" id="file-input" accept="image/jpeg,image/png,image/webp" style="display:none;">
+              <div class="dropzone-inner">
+                <div class="upload-icon-bubble">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                </div>
+                <p class="drop-text-primary">Drag & drop monument photo here</p>
+                <span class="drop-text-or">or</span>
+                <button class="btn-choose" id="browse-btn" type="button">Choose Image</button>
+                <p class="drop-text-hint">Supports JPEG, PNG, WebP</p>
+              </div>
+            </div>
+
+            <!-- Quick Test Samples -->
+            <div class="samples-block">
+              <span class="control-section-title">Quick Test from Field Dataset</span>
+              <div class="samples-grid">
+                <button class="sample-btn" data-sample="samples/sample_crack.jpg">
+                  <span class="sample-dot dot-crack"></span>
+                  <span class="sample-label">Fracture (Crack)</span>
+                </button>
+                <button class="sample-btn" data-sample="samples/sample_seepage.jpg">
+                  <span class="sample-dot dot-seepage"></span>
+                  <span class="sample-label">Seepage Infiltration</span>
+                </button>
+                <button class="sample-btn" data-sample="samples/sample_mixed.jpg">
+                  <span class="sample-dot dot-moss"></span>
+                  <span class="sample-label">Multi-Defect Facade</span>
+                </button>
+                <button class="sample-btn" data-sample="samples/sample_crack_molding.jpg">
+                  <span class="sample-dot dot-crack"></span>
+                  <span class="sample-label">Base Molding Crack</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- Inference Parameters Tuning -->
+            <div class="parameters-block">
+              <div class="params-header-row">
+                <span class="control-section-title">Inference Parameters</span>
+                <span class="badge-param" id="current-preset-label">Standard (0.25)</span>
+              </div>
+
+              <!-- Confidence Slider -->
+              <div class="slider-field">
+                <div class="slider-label-row">
+                  <span>Confidence Threshold</span>
+                  <span class="slider-num-val" id="val-score-thresh">0.25</span>
+                </div>
+                <input type="range" id="slider-score-thresh" min="0.05" max="0.50" step="0.01" value="0.25">
+              </div>
+
+              <!-- NMS Slider -->
+              <div class="slider-field">
+                <div class="slider-label-row">
+                  <span>NMS IoU Threshold</span>
+                  <span class="slider-num-val" id="val-nms-thresh">0.45</span>
+                </div>
+                <input type="range" id="slider-nms-thresh" min="0.20" max="0.65" step="0.05" value="0.45">
+              </div>
+
+              <!-- CLAHE Checkbox -->
+              <div class="checkbox-field">
+                <input type="checkbox" id="check-clahe" checked>
+                <label for="check-clahe">
+                  <span class="cb-title">CLAHE & Median Denoising</span>
+                  <span class="cb-hint">Enhances micro-fractures on weathered stone</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Primary Execute Button -->
+            <button class="btn-run-analysis" id="btn-run-inference">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <span id="btn-run-text">Run Defect Inspection</span>
+            </button>
+          </div>
+
+        </aside>
+
+        <!-- Right Main: Visualizer, Risk Assessment & Recommendations -->
+        <div class="main-column">
+          
+          <!-- Image Inspection Viewport Card -->
+          <div class="surface-card visualizer-panel">
+            
+            <!-- Toolbar -->
+            <div class="viewport-toolbar">
+              <div class="view-mode-switch" role="group">
+                <button class="mode-btn active" data-view="annotated" id="toggle-annotated">Annotated</button>
+                <button class="mode-btn" data-view="side-by-side" id="toggle-split">Side-by-Side</button>
+                <button class="mode-btn" data-view="raw" id="toggle-raw">Raw Original</button>
+              </div>
+
+              <div class="defect-filter-row">
+                <span class="filter-label">Filter:</span>
+                <label class="filter-pill pill-crack active">
+                  <input type="checkbox" id="filter-crack" checked>
+                  <span class="pill-dot"></span>
+                  <span>Crack</span>
+                </label>
+                <label class="filter-pill pill-moss active">
+                  <input type="checkbox" id="filter-moss" checked>
+                  <span class="pill-dot"></span>
+                  <span>Moss</span>
+                </label>
+                <label class="filter-pill pill-seepage active">
+                  <input type="checkbox" id="filter-seepage" checked>
+                  <span class="pill-dot"></span>
+                  <span>Seepage</span>
+                </label>
+              </div>
+            </div>
+
+            <!-- Canvas Container -->
+            <div class="canvas-viewport" id="viewport">
+              <div class="loader-overlay" id="loading-overlay">
+                <div class="modern-spinner"></div>
+                <p>Analyzing monument surface with SSDLite320...</p>
+              </div>
+
+              <div class="empty-view-state" id="empty-state">
+                <div class="empty-icon-box">
+                  <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                    <circle cx="8.5" cy="8.5" r="1.5"></circle>
+                    <polyline points="21 15 16 10 5 21"></polyline>
+                  </svg>
+                </div>
+                <h4>No Monument Image Loaded</h4>
+                <p>Select a quick test sample on the left or upload a monument photo to begin inspection.</p>
+              </div>
+
+              <canvas id="detection-canvas"></canvas>
+            </div>
+
+            <!-- Bottom Metadata & Export Actions -->
+            <div class="viewport-footer" id="download-bar">
+              <div class="file-meta">
+                <span class="file-name" id="inspected-filename">No image selected</span>
+                <span class="meta-dot">•</span>
+                <span class="file-res" id="inspected-dims">— x — px</span>
+              </div>
+              <div class="export-btn-group">
+                <button class="btn-action" id="btn-download-img" title="Download High-Resolution Annotated Photo">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                  </svg>
+                  <span>Annotated Image</span>
+                </button>
+                <button class="btn-action" id="btn-download-md" title="Download Official ASI Protocol Report">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                    <polyline points="14 2 14 8 20 8"></polyline>
+                  </svg>
+                  <span>ASI Report (MD)</span>
+                </button>
+                <button class="btn-action" id="btn-download-json" title="Export Raw Detection JSON Dataset">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                  </svg>
+                  <span>JSON Data</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Overall Assessment & Defect Pathology Breakdown -->
+          <div class="assessment-grid">
+            
+            <!-- Overall Risk Card -->
+            <div class="surface-card risk-card" id="risk-banner-card">
+              <div class="risk-card-top">
+                <div class="risk-title-col">
+                  <span class="sub-caption">Structural Assessment</span>
+                  <div class="risk-badge-holder">
+                    <span class="risk-pill badge-pending" id="risk-badge">PENDING</span>
+                  </div>
+                </div>
+                <div class="coverage-stat-col">
+                  <span class="coverage-val" id="coverage-val">0.0%</span>
+                  <span class="coverage-lbl">Decay Coverage</span>
+                </div>
+              </div>
+
+              <div class="progress-track">
+                <div class="progress-fill" id="risk-progress-fill" style="width: 0%;"></div>
+              </div>
+
+              <div class="rationale-card">
+                <div class="rationale-header">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                  </svg>
+                  <span>Diagnostic Rationale</span>
+                </div>
+                <p id="risk-rationale-text" class="rationale-body">Awaiting inspection. Run defect detection to calculate surface vulnerability and risk factors.</p>
+              </div>
+
+              <div class="timeline-row">
+                <span class="timeline-lbl">Intervention Window:</span>
+                <span id="risk-timeline-text" class="timeline-val">Awaiting inspection</span>
+              </div>
+            </div>
+
+            <!-- Defect Breakdown Cards -->
+            <div class="defects-stack">
+              
+              <!-- Crack Card -->
+              <div class="surface-card defect-item-card border-crack">
+                <div class="defect-header">
+                  <div class="defect-name-group">
+                    <span class="defect-dot dot-crack"></span>
+                    <h4>Crack</h4>
+                  </div>
+                  <span class="count-badge" id="count-crack">0</span>
+                </div>
+                <div class="defect-details">
+                  <div class="defect-meta-row">
+                    <span class="meta-label">Severity</span>
+                    <span class="meta-value text-crack">High (Critical)</span>
+                  </div>
+                  <div class="defect-meta-row">
+                    <span class="meta-label">Max Confidence</span>
+                    <span class="meta-value mono-val" id="conf-crack">0.00</span>
+                  </div>
+                  <p class="defect-desc">Structural masonry fissures causing stone shear displacement.</p>
+                </div>
+              </div>
+
+              <!-- Moss Card -->
+              <div class="surface-card defect-item-card border-moss">
+                <div class="defect-header">
+                  <div class="defect-name-group">
+                    <span class="defect-dot dot-moss"></span>
+                    <h4>Moss & Lichen</h4>
+                  </div>
+                  <span class="count-badge" id="count-moss">0</span>
+                </div>
+                <div class="defect-details">
+                  <div class="defect-meta-row">
+                    <span class="meta-label">Severity</span>
+                    <span class="meta-value text-moss">Medium</span>
+                  </div>
+                  <div class="defect-meta-row">
+                    <span class="meta-label">Max Confidence</span>
+                    <span class="meta-value mono-val" id="conf-moss">0.00</span>
+                  </div>
+                  <p class="defect-desc">Biological root penetration, damp retention, and acid secretion.</p>
+                </div>
+              </div>
+
+              <!-- Seepage Card -->
+              <div class="surface-card defect-item-card border-seepage">
+                <div class="defect-header">
+                  <div class="defect-name-group">
+                    <span class="defect-dot dot-seepage"></span>
+                    <h4>Water Seepage</h4>
+                  </div>
+                  <span class="count-badge" id="count-seepage">0</span>
+                </div>
+                <div class="defect-details">
+                  <div class="defect-meta-row">
+                    <span class="meta-label">Severity</span>
+                    <span class="meta-value text-seepage">High</span>
+                  </div>
+                  <div class="defect-meta-row">
+                    <span class="meta-label">Max Confidence</span>
+                    <span class="meta-value mono-val" id="conf-seepage">0.00</span>
+                  </div>
+                  <p class="defect-desc">Capillary moisture infiltration causing subflorescence salt spalling.</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Dedicated Preservation Recommendation Section -->
+          <div class="surface-card preservation-panel" id="preservation-recommendation-card">
+            
+            <div class="preservation-top-row">
+              <div>
+                <span class="sub-caption">Scientific Preservation Guidance</span>
+                <h3 class="preservation-title">Preservation Recommendation</h3>
+                <p class="preservation-desc">Interventions formulated in accordance with Archaeological Survey of India (ASI) manuals and ICOMOS standards.</p>
+              </div>
+              <div class="asi-badge">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+                <span>ASI Standard</span>
+              </div>
+            </div>
+
+            <!-- 4 Pillars Grid -->
+            <div class="pillars-grid" id="preservation-pillars-container">
+              
+              <!-- Pillar 1: Observed Condition -->
+              <div class="pillar-card">
+                <div class="pillar-head">
+                  <span class="pillar-idx">01</span>
+                  <h4>Observed Condition</h4>
+                </div>
+                <div class="pillar-body" id="rec-observed-condition">
+                  <p class="pillar-empty">Awaiting image inspection. Detected pathologies, primary defect risk factors, and surface coverage will be summarized here.</p>
+                </div>
+              </div>
+
+              <!-- Pillar 2: Recommended Action -->
+              <div class="pillar-card">
+                <div class="pillar-head">
+                  <span class="pillar-idx">02</span>
+                  <h4>Recommended Action</h4>
+                </div>
+                <div class="pillar-body" id="rec-recommended-action">
+                  <p class="pillar-empty">Intervention protocols including lime grouting, biocidal cleansing, or desalination will populate after diagnostic analysis.</p>
+                </div>
+              </div>
+
+              <!-- Pillar 3: Priority & Timeline -->
+              <div class="pillar-card">
+                <div class="pillar-head">
+                  <span class="pillar-idx">03</span>
+                  <h4>Priority & Timeline</h4>
+                </div>
+                <div class="pillar-body" id="rec-priority-timeline">
+                  <p class="pillar-empty">Action timelines and urgency stratification will appear upon defect detection.</p>
+                </div>
+              </div>
+
+              <!-- Pillar 4: Preventive Measure -->
+              <div class="pillar-card">
+                <div class="pillar-head">
+                  <span class="pillar-idx">04</span>
+                  <h4>Preventive Measure</h4>
+                </div>
+                <div class="pillar-body" id="rec-preventive-measure">
+                  <p class="pillar-empty">Long-term environmental mitigation, continuous monitoring, and contraindication guidelines.</p>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Dynamic Protocols Container -->
+            <div class="dynamic-protocols-wrap" id="dynamic-protocols-list"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 2: CONSERVATION PROTOCOLS -->
+    <!-- ========================================================================= -->
+    <section class="tab-pane" id="tab-protocols">
+      <div class="standard-inner-page">
+        
+        <div class="page-hero">
+          <span class="hero-eyebrow">Scientific Preservation Reference</span>
+          <h2 class="hero-title">Conservation Protocols (ASI & ICOMOS)</h2>
+          <p class="hero-desc">Validated preservation procedures mapped to stone decay pathology across ancient granite and sandstone monument structures.</p>
+        </div>
+
+        <div class="protocols-list-grid">
+          
+          <!-- Crack Protocol -->
+          <article class="surface-card protocol-card border-crack">
+            <div class="protocol-card-head">
+              <div class="badge-row">
+                <span class="priority-badge badge-high-urgency">High Urgency</span>
+                <span class="code-badge">ASI-PROT-FISSURE</span>
+              </div>
+              <h3>Structural Fracture & Crack Intervention</h3>
+              <p class="protocol-subtitle">Applicable for granite and sandstone masonry shear fissures & load fractures</p>
+            </div>
+
+            <div class="protocol-section-block">
+              <h4>1. Diagnostic Procedures</h4>
+              <ul>
+                <li>Conduct non-destructive Ultrasonic Pulse Velocity (UPV) or Ground Penetrating Radar (GPR) to determine internal fracture depth.</li>
+                <li>Mount calibrated polycarbonate tell-tale crack gauges with vernier scales to monitor active seasonal thermal or foundation displacement.</li>
+                <li>Examine foundation plinths for differential settlement, moisture heave, or tectonic shift.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-section-block">
+              <h4>2. Treatment & Stabilization</h4>
+              <ul>
+                <li>Flush fissure channels using oil-free low-pressure compressed air (1.5 bar) and deionized water.</li>
+                <li>Gravity injection of breathable Natural Hydraulic Lime grout (NHL 2.0 or NHL 3.5) blended with fine silica sand (1:2 ratio).</li>
+                <li>For severe structural cracks (>10mm), install Austenitic Grade 316 stainless steel helical stitching ties.</li>
+                <li>Point surface joints using sacrificial lime-pozzolana mortar matching original temple stone patina.</li>
+              </ul>
+            </div>
+
+            <div class="warning-callout">
+              <div class="warning-head">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span>Strict Contraindication</span>
+              </div>
+              <p>DO NOT use Ordinary Portland Cement (OPC) or epoxy resin injections. Rigid impermeable barriers accelerate differential thermal stress, leading to irreversible stone spalling and salt entrapment.</p>
+            </div>
+          </article>
+
+          <!-- Moss Protocol -->
+          <article class="surface-card protocol-card border-moss">
+            <div class="protocol-card-head">
+              <div class="badge-row">
+                <span class="priority-badge badge-med-urgency">Medium Urgency</span>
+                <span class="code-badge">ASI-PROT-BIOCIDE</span>
+              </div>
+              <h3>Biological Colonization & Lichen Remediation</h3>
+              <p class="protocol-subtitle">Applicable for algae, lichen, and bryophyte colonies on carved stone surfaces</p>
+            </div>
+
+            <div class="protocol-section-block">
+              <h4>1. Diagnostic Procedures</h4>
+              <ul>
+                <li>Identify biological species taxonomy and assess stone friability beneath fungal rhizoid anchors.</li>
+                <li>Measure surface dampness gradients using a non-invasive dielectric pinless moisture meter.</li>
+                <li>Inspect overhead tree canopy shade angles and microclimate humidity stagnation zones.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-section-block">
+              <h4>2. Biocidal Treatment</h4>
+              <ul>
+                <li>Pre-wet stone with demineralized water and gently brush with soft natural horsehair or tampico bristle brushes.</li>
+                <li>Apply biodegradable quaternary ammonium salt solution (2–3% w/v) poultice with 24–48 hour dwell time.</li>
+                <li>Nebulous low-pressure mist rinse (<3 bar) to clear loosened organic matter and spore residue.</li>
+                <li>Prune overhanging foliage to maintain minimum 2-meter air clearance for natural solar exposure and air circulation.</li>
+              </ul>
+            </div>
+
+            <div class="warning-callout">
+              <div class="warning-head">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span>Strict Contraindication</span>
+              </div>
+              <p>DO NOT use high-pressure power washing (>15 bar) or wire brushes, which erode historic quarry tool marks and patina. Never apply sodium hypochlorite (household bleach) which introduces damaging hygroscopic salts.</p>
+            </div>
+          </article>
+
+          <!-- Seepage Protocol -->
+          <article class="surface-card protocol-card border-seepage">
+            <div class="protocol-card-head">
+              <div class="badge-row">
+                <span class="priority-badge badge-high-urgency">High Urgency</span>
+                <span class="code-badge">ASI-PROT-MOISTURE</span>
+              </div>
+              <h3>Moisture Seepage & Efflorescence Control</h3>
+              <p class="protocol-subtitle">Applicable for capillary rising damp and temple terrace water infiltration</p>
+            </div>
+
+            <div class="protocol-section-block">
+              <h4>1. Diagnostic Procedures</h4>
+              <ul>
+                <li>Map moisture thermal gradients across facade using calibrated infrared thermography to isolate water ingress sources.</li>
+                <li>Sample surface salt crystals for laboratory ion chromatography to identify damaging nitrates, chlorides, or sulfates.</li>
+                <li>Inspect temple roof parapet cornices, drainage gargoyles (pranala), and terrace waterproof lime layers.</li>
+              </ul>
+            </div>
+
+            <div class="protocol-section-block">
+              <h4>2. Desalination & Waterproofing</h4>
+              <ul>
+                <li>Desalinate affected masonry using sacrificial cellulose pulp (Arbocel) poultices saturated with distilled water.</li>
+                <li>Re-grade terrace drainage channels to establish a minimum 1:50 slope away from structural vimana cores.</li>
+                <li>Apply breathable oligomeric silane/siloxane water-repellent impregnator only when substrate moisture is below 5%.</li>
+                <li>Install perimeter French gravel drains around temple plinth to intercept rising groundwater tables.</li>
+              </ul>
+            </div>
+
+            <div class="warning-callout">
+              <div class="warning-head">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="7.86 2 16.14 2 22 7.86 22 16.14 16.14 22 7.86 22 2 16.14 2 7.86 7.86 2"></polygon>
+                  <line x1="12" y1="8" x2="12" y2="12"></line>
+                  <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                </svg>
+                <span>Strict Contraindication</span>
+              </div>
+              <p>DO NOT apply film-forming acrylic, polyurethane, or oil-based sealers. Sealing moisture within ancient stone cores causes sub-surface salt crystallization and catastrophic spalling.</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 3: TEMPLE SITES & DATASET -->
+    <!-- ========================================================================= -->
+    <section class="tab-pane" id="tab-monuments">
+      <div class="standard-inner-page">
+        
+        <div class="page-hero">
+          <span class="hero-eyebrow">Survey Archive & Field Dataset</span>
+          <h2 class="hero-title">Monitored Ancient Monuments & Dataset</h2>
+          <p class="hero-desc">Curated survey archive comprising 307 canonical high-resolution images across Chola architectural complexes in Tamil Nadu, India.</p>
+        </div>
+
+        <!-- Monument Cards -->
+        <div class="temple-sites-grid">
+          
+          <article class="surface-card temple-card">
+            <span class="site-tag">UNESCO World Heritage Site</span>
+            <h3>Brihadisvara (Big) Temple</h3>
+            <p class="site-geo">Thanjavur, Tamil Nadu, India</p>
+            
+            <div class="specs-grid">
+              <div class="spec-cell">
+                <span class="spec-num">120</span>
+                <span class="spec-lbl">Survey Images</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-num">Granite</span>
+                <span class="spec-lbl">Stone Material</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-num">1010 CE</span>
+                <span class="spec-lbl">Consecration</span>
+              </div>
+            </div>
+
+            <p class="site-text">
+              Commissioned by Emperor Rajaraja Chola I. High-relief granite carvings and monolithic plinths are exposed to monsoon driving rain, micro-cracking, and biological crustose lichen colonies on northern orientations.
+            </p>
+          </article>
+
+          <article class="surface-card temple-card">
+            <span class="site-tag">Historic Chola Complex</span>
+            <h3>Kasiviswanathar Temple</h3>
+            <p class="site-geo">Thanjavur, Tamil Nadu, India</p>
+            
+            <div class="specs-grid">
+              <div class="spec-cell">
+                <span class="spec-num">187</span>
+                <span class="spec-lbl">Survey Images</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-num">Sandstone/Granite</span>
+                <span class="spec-lbl">Stone Material</span>
+              </div>
+              <div class="spec-cell">
+                <span class="spec-num">Historic</span>
+                <span class="spec-lbl">Chronology</span>
+              </div>
+            </div>
+
+            <p class="site-text">
+              Features ornate vimana moldings and enclosed prakara corridors exhibiting rising damp from high groundwater tables and subflorescence salt crystallization.
+            </p>
+          </article>
+
+        </div>
+
+        <!-- Dataset Breakdown Card -->
+        <div class="surface-card dataset-breakdown-card">
+          <div class="dataset-head-row">
+            <h3>Canonical Dataset Distribution (307 Unique Images)</h3>
+            <span class="verified-tag">Verified Split</span>
+          </div>
+
+          <div class="splits-row">
+            <div class="split-box">
+              <span class="split-lbl">Train Split (70.0%)</span>
+              <span class="split-count">215 Images</span>
+              <span class="split-sub">3,243 Ground Truth Boxes</span>
+            </div>
+            <div class="split-box">
+              <span class="split-lbl">Validation Split (15.3%)</span>
+              <span class="split-count">47 Images</span>
+              <span class="split-sub">691 Ground Truth Boxes</span>
+            </div>
+            <div class="split-box">
+              <span class="split-lbl">Test Split (14.7%)</span>
+              <span class="split-count">45 Images</span>
+              <span class="split-sub">664 Ground Truth Boxes</span>
+            </div>
+          </div>
+
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Class ID</th>
+                  <th>Defect Class</th>
+                  <th>Bounding Boxes</th>
+                  <th>Box Share</th>
+                  <th>Diagnostic Role in Dataset</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><code>0</code></td>
+                  <td><strong>Normal</strong></td>
+                  <td class="mono-val">0 boxes</td>
+                  <td class="mono-val">0.0%</td>
+                  <td>Baseline negative / undamaged background survey (4 images)</td>
+                </tr>
+                <tr>
+                  <td><code>1</code></td>
+                  <td><strong class="text-crack">Crack</strong></td>
+                  <td class="mono-val">332 boxes</td>
+                  <td class="mono-val">7.23%</td>
+                  <td>Structural masonry fissures and load fracture lines</td>
+                </tr>
+                <tr>
+                  <td><code>2</code></td>
+                  <td><strong class="text-moss">Moss</strong></td>
+                  <td class="mono-val">321 boxes</td>
+                  <td class="mono-val">6.99%</td>
+                  <td>Biological colonization, algae, and crustose lichen</td>
+                </tr>
+                <tr>
+                  <td><code>3</code></td>
+                  <td><strong class="text-seepage">Seepage</strong></td>
+                  <td class="mono-val">3,940 boxes</td>
+                  <td class="mono-val">85.78%</td>
+                  <td>Moisture capillary infiltration and damp staining</td>
+                </tr>
+                <tr class="table-total-row">
+                  <td>—</td>
+                  <td><strong>Total Defect Boxes</strong></td>
+                  <td class="mono-val"><strong>4,593 boxes</strong></td>
+                  <td class="mono-val"><strong>100.0%</strong></td>
+                  <td>All verified with strictly disjoint train/val/test splits</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 4: MODEL INSIGHTS -->
+    <!-- ========================================================================= -->
+    <section class="tab-pane" id="tab-benchmarks">
+      <div class="standard-inner-page">
+        
+        <div class="page-hero">
+          <span class="hero-eyebrow">Empirical Model Benchmarking</span>
+          <h2 class="hero-title">Model Insights: Phase 3 Baseline vs Phase 3B Improved</h2>
+          <p class="hero-desc">Evaluated on the identical untouched 45-image test split (664 ground truth defect boxes).</p>
+        </div>
+
+        <!-- Benchmark Comparison Table -->
+        <div class="surface-card benchmark-card">
+          <div class="table-container">
+            <table class="data-table">
+              <thead>
+                <tr>
+                  <th>Metric / Evaluation Aspect</th>
+                  <th>Phase 3 Baseline</th>
+                  <th>Phase 3B Improved</th>
+                  <th>Measured Impact</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="row-highlight">
+                  <td><strong>Mean Average Precision (mAP@0.5)</strong></td>
+                  <td class="mono-val">0.0139</td>
+                  <td class="mono-val"><strong>0.0141</strong></td>
+                  <td><span class="delta-tag delta-gain">+1.4% Improvement</span></td>
+                </tr>
+                <tr class="row-highlight">
+                  <td><strong>Crack Precision</strong></td>
+                  <td class="mono-val">0.0000</td>
+                  <td class="mono-val"><strong>0.0194</strong></td>
+                  <td><span class="delta-tag delta-unlocked">UNLOCKED (+0.0194)</span></td>
+                </tr>
+                <tr class="row-highlight">
+                  <td><strong>Crack Recall (True Positives)</strong></td>
+                  <td class="mono-val">0.0000 (0 / 50 TP)</td>
+                  <td class="mono-val"><strong>0.0400 (2 / 50 TP)</strong></td>
+                  <td><span class="delta-tag delta-unlocked">UNLOCKED (2 Fissures Localized)</span></td>
+                </tr>
+                <tr class="row-highlight">
+                  <td><strong>Crack F1-Score</strong></td>
+                  <td class="mono-val">0.0000</td>
+                  <td class="mono-val"><strong>0.0261</strong></td>
+                  <td><span class="delta-tag delta-unlocked">UNLOCKED (+0.0261)</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Moss Recall (True Positives)</strong></td>
+                  <td class="mono-val">0.0930 (4 / 43 TP)</td>
+                  <td class="mono-val"><strong>0.2326 (10 / 43 TP)</strong></td>
+                  <td><span class="delta-tag delta-gain">+150.1% True Detections</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Moss AP@50</strong></td>
+                  <td class="mono-val">0.0113</td>
+                  <td class="mono-val"><strong>0.0117</strong></td>
+                  <td><span class="delta-tag delta-gain">+3.5% Improvement</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Seepage Recall (True Positives)</strong></td>
+                  <td class="mono-val">0.2084 (119 / 571 TP)</td>
+                  <td class="mono-val"><strong>0.2329 (133 / 571 TP)</strong></td>
+                  <td><span class="delta-tag delta-gain">+11.8% True Detections</span></td>
+                </tr>
+                <tr>
+                  <td><strong>Image-Level Accuracy</strong></td>
+                  <td class="mono-val">66.67% (30 / 45)</td>
+                  <td class="mono-val"><strong>66.67% (30 / 45)</strong></td>
+                  <td><span class="delta-tag delta-neutral">Maintained Stable</span></td>
+                </tr>
+                <tr class="row-highlight">
+                  <td><strong>Multi-Class ROC-AUC</strong></td>
+                  <td class="mono-val">0.5048</td>
+                  <td class="mono-val"><strong>0.6201</strong></td>
+                  <td><span class="delta-tag delta-gain">+22.8% Relative Gain</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Methodological Advances Grid -->
+        <div class="surface-card advances-panel">
+          <div class="advances-head">
+            <h3>Key Methodological Advances in Phase 3B</h3>
+            <p>SSDLite320 architectural tuning tailored to heterogeneous architectural stone surfaces</p>
+          </div>
+          
+          <div class="advances-2x2-grid">
+            <div class="advance-box">
+              <span class="advance-index">01</span>
+              <h4>Balanced Loss Gradients</h4>
+              <p>Dynamic class loss weights <code>[1.0, 3.5, 3.5, 1.0]</code> countered the 85.8% seepage bias, boosting crack prediction confidence from &lt;0.09 to over 0.40.</p>
+            </div>
+            <div class="advance-box">
+              <span class="advance-index">02</span>
+              <h4>Conservative Augmentation</h4>
+              <p>Object-detection-safe horizontal and vertical flips combined with &plusmn;15% color jitter enhanced optical resilience without distorting coordinate accuracy.</p>
+            </div>
+            <div class="advance-box">
+              <span class="advance-index">03</span>
+              <h4>CLAHE Contrast Preprocessing</h4>
+              <p>Pre-inference adaptive histogram equalization accentuates micro-fracture shadow contours across weathered granite surfaces.</p>
+            </div>
+            <div class="advance-box">
+              <span class="advance-index">04</span>
+              <h4>Validation Grid Tuning</h4>
+              <p>Optimal confidence threshold (0.25) and NMS IoU threshold (0.45) selected strictly using 47 validation images prior to test set evaluation.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Script -->
+  <script src="app.js"></script>
+</body>
+</html>

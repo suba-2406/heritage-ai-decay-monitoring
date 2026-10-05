@@ -1,0 +1,259 @@
+{
+  "model": "SSDLite320_MobileNet_V3_Large_Phase3B",
+  "checkpoint": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\training\\checkpoints\\ssd_monument_decay_phase3b_best.pth",
+  "score_threshold": 0.25,
+  "nms_threshold": 0.45,
+  "iou_threshold": 0.5,
+  "test_image_count": 45,
+  "object_detection_metrics": {
+    "mAP_50": 0.0141,
+    "per_class": {
+      "Crack": {
+        "total_ground_truth_boxes": 50,
+        "true_positives": 2,
+        "false_positives": 101,
+        "false_negatives": 48,
+        "precision": 0.0194,
+        "recall": 0.04,
+        "f1_score": 0.0261,
+        "ap50": 0.0008
+      },
+      "Moss": {
+        "total_ground_truth_boxes": 43,
+        "true_positives": 10,
+        "false_positives": 188,
+        "false_negatives": 33,
+        "precision": 0.0505,
+        "recall": 0.2326,
+        "f1_score": 0.083,
+        "ap50": 0.0117
+      },
+      "Seepage": {
+        "total_ground_truth_boxes": 571,
+        "true_positives": 133,
+        "false_positives": 912,
+        "false_negatives": 438,
+        "precision": 0.1273,
+        "recall": 0.2329,
+        "f1_score": 0.1646,
+        "ap50": 0.0296
+      }
+    }
+  },
+  "image_level_classification_metrics": {
+    "accuracy": 0.6667,
+    "macro_precision": 0.3083,
+    "macro_recall": 0.3167,
+    "macro_f1": 0.3124,
+    "weighted_f1": 0.6613,
+    "overall_roc_auc": 0.6201,
+    "confusion_matrix": [
+      [
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        7,
+        0,
+        7
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        7,
+        0,
+        23
+      ]
+    ],
+    "roc_auc_per_class": {
+      "Normal": 0.5,
+      "Crack": 0.6647,
+      "Moss": "N/A (No test samples)",
+      "Seepage": 0.6956
+    },
+    "detailed_classification_report": {
+      "Normal": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "Crack": {
+        "precision": 0.4666666666666667,
+        "recall": 0.5,
+        "f1-score": 0.4827586206896552,
+        "support": 14.0
+      },
+      "Moss": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "Seepage": {
+        "precision": 0.7666666666666667,
+        "recall": 0.7666666666666667,
+        "f1-score": 0.7666666666666667,
+        "support": 30.0
+      },
+      "accuracy": 0.6666666666666666,
+      "macro avg": {
+        "precision": 0.30833333333333335,
+        "recall": 0.31666666666666665,
+        "f1-score": 0.31235632183908046,
+        "support": 45.0
+      },
+      "weighted avg": {
+        "precision": 0.6562962962962963,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.6613026819923372,
+        "support": 45.0
+      }
+    }
+  },
+  "qualitative_samples": [
+    {
+      "filename": "Copy of IMG_20260624_124456.jpg",
+      "ground_truth_dominant": "Seepage",
+      "predicted_dominant": "Seepage",
+      "gt_box_count": 15,
+      "pred_box_count": 14,
+      "is_correct": true,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_01_Copy of IMG_20260624_124456.png"
+    },
+    {
+      "filename": "Copy of IMG_20260624_124701.jpg",
+      "ground_truth_dominant": "Seepage",
+      "predicted_dominant": "Seepage",
+      "gt_box_count": 15,
+      "pred_box_count": 64,
+      "is_correct": true,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_02_Copy of IMG_20260624_124701.png"
+    },
+    {
+      "filename": "Copy of IMG_20260624_124759.jpg",
+      "ground_truth_dominant": "Crack",
+      "predicted_dominant": "Seepage",
+      "gt_box_count": 15,
+      "pred_box_count": 15,
+      "is_correct": false,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_03_Copy of IMG_20260624_124759.png"
+    },
+    {
+      "filename": "Copy of IMG_20260624_125906.jpg",
+      "ground_truth_dominant": "Seepage",
+      "predicted_dominant": "Seepage",
+      "gt_box_count": 15,
+      "pred_box_count": 42,
+      "is_correct": true,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_04_Copy of IMG_20260624_125906.png"
+    },
+    {
+      "filename": "IMG_20260609_074533-2.jpg",
+      "ground_truth_dominant": "Crack",
+      "predicted_dominant": "Crack",
+      "gt_box_count": 12,
+      "pred_box_count": 18,
+      "is_correct": true,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_05_IMG_20260609_074533-2.png"
+    },
+    {
+      "filename": "IMG_20260609_075039-2.jpg",
+      "ground_truth_dominant": "Seepage",
+      "predicted_dominant": "Seepage",
+      "gt_box_count": 15,
+      "pred_box_count": 29,
+      "is_correct": true,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_06_IMG_20260609_075039-2.png"
+    },
+    {
+      "filename": "IMG_20260609_075103-2.jpg",
+      "ground_truth_dominant": "Seepage",
+      "predicted_dominant": "Seepage",
+      "gt_box_count": 19,
+      "pred_box_count": 32,
+      "is_correct": true,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_07_IMG_20260609_075103-2.png"
+    },
+    {
+      "filename": "IMG_20260609_075716-2.jpg",
+      "ground_truth_dominant": "Seepage",
+      "predicted_dominant": "Crack",
+      "gt_box_count": 13,
+      "pred_box_count": 13,
+      "is_correct": false,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_08_IMG_20260609_075716-2.png"
+    },
+    {
+      "filename": "IMG_20260609_075812-2.jpg",
+      "ground_truth_dominant": "Seepage",
+      "predicted_dominant": "Seepage",
+      "gt_box_count": 24,
+      "pred_box_count": 49,
+      "is_correct": true,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_09_IMG_20260609_075812-2.png"
+    },
+    {
+      "filename": "IMG_20260609_075948-2.jpg",
+      "ground_truth_dominant": "Seepage",
+      "predicted_dominant": "Seepage",
+      "gt_box_count": 12,
+      "pred_box_count": 26,
+      "is_correct": true,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_10_IMG_20260609_075948-2.png"
+    },
+    {
+      "filename": "IMG_20260609_080040-2.jpg",
+      "ground_truth_dominant": "Crack",
+      "predicted_dominant": "Crack",
+      "gt_box_count": 12,
+      "pred_box_count": 29,
+      "is_correct": true,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_11_IMG_20260609_080040-2.png"
+    },
+    {
+      "filename": "IMG_20260609_080307-2.jpg",
+      "ground_truth_dominant": "Seepage",
+      "predicted_dominant": "Seepage",
+      "gt_box_count": 16,
+      "pred_box_count": 13,
+      "is_correct": true,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_12_IMG_20260609_080307-2.png"
+    },
+    {
+      "filename": "IMG_20260609_080528-2.jpg",
+      "ground_truth_dominant": "Crack",
+      "predicted_dominant": "Seepage",
+      "gt_box_count": 15,
+      "pred_box_count": 20,
+      "is_correct": false,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_13_IMG_20260609_080528-2.png"
+    },
+    {
+      "filename": "IMG_20260609_080648-2.jpg",
+      "ground_truth_dominant": "Seepage",
+      "predicted_dominant": "Seepage",
+      "gt_box_count": 15,
+      "pred_box_count": 13,
+      "is_correct": true,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_14_IMG_20260609_080648-2.png"
+    },
+    {
+      "filename": "IMG_20260609_081651-2.jpg",
+      "ground_truth_dominant": "Seepage",
+      "predicted_dominant": "Seepage",
+      "gt_box_count": 19,
+      "pred_box_count": 45,
+      "is_correct": true,
+      "vis_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\evaluation\\visualizations_phase3b\\test_pred_15_IMG_20260609_081651-2.png"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "filename": "IMG_20260609_073544-2.jpg",
+  "rel_path": "big temple\\IMG_20260609_073544-2.jpg",
+  "site": "big temple",
+  "width": 3072,
+  "height": 4096,
+  "status": "VERIFIED_DEFECT",
+  "boxes": [
+    {
+      "xmin": 544.0,
+      "ymin": 160.0,
+      "xmax": 672.0,
+      "ymax": 352.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.7,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1952.0,
+      "ymin": 0.0,
+      "xmax": 2208.0,
+      "ymax": 288.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.62,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2272.0,
+      "ymin": 96.0,
+      "xmax": 2464.0,
+      "ymax": 352.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.62,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 480.0,
+      "ymin": 0.0,
+      "xmax": 672.0,
+      "ymax": 160.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.61,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 160.0,
+      "ymin": 1312.0,
+      "xmax": 352.0,
+      "ymax": 1568.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.61,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 672.0,
+      "ymin": 1760.0,
+      "xmax": 800.0,
+      "ymax": 1952.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.61,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 992.0,
+      "ymin": 3360.0,
+      "xmax": 1184.0,
+      "ymax": 3552.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.6,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2016.0,
+      "ymin": 0.0,
+      "xmax": 2272.0,
+      "ymax": 160.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.59,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2784.0,
+      "ymin": 480.0,
+      "xmax": 2976.0,
+      "ymax": 608.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.59,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2784.0,
+      "ymin": 3488.0,
+      "xmax": 2976.0,
+      "ymax": 3680.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.59,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 0.0,
+      "ymin": 3744.0,
+      "xmax": 160.0,
+      "ymax": 3872.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.59,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 480.0,
+      "ymin": 288.0,
+      "xmax": 672.0,
+      "ymax": 416.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 992.0,
+      "ymin": 3424.0,
+      "xmax": 1184.0,
+      "ymax": 3744.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1632.0,
+      "ymin": 608.0,
+      "xmax": 1824.0,
+      "ymax": 736.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.57,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2976.0,
+      "ymin": 2208.0,
+      "xmax": 3072.0,
+      "ymax": 2592.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.56,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 963.0,
+      "ymin": 737.0,
+      "xmax": 2309.0,
+      "ymax": 1234.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 2489.0,
+      "ymin": 2845.0,
+      "xmax": 3011.0,
+      "ymax": 3265.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 475.0,
+      "ymin": 471.0,
+      "xmax": 955.0,
+      "ymax": 1003.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    }
+  ],
+  "reviewer": "Human Reviewer",
+  "review_timestamp": "2026-09-29T17:20:49.606Z",
+  "notes": null
+}

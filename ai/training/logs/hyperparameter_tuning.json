@@ -1,0 +1,37 @@
+{
+  "candidates": [
+    {
+      "name": "AdamW_lr1e-3_b4",
+      "optimizer": "AdamW",
+      "lr": 0.001,
+      "weight_decay": 0.0005,
+      "batch_size": 4,
+      "pilot_val_loss": 6.4739
+    },
+    {
+      "name": "AdamW_lr5e-4_b4",
+      "optimizer": "AdamW",
+      "lr": 0.0005,
+      "weight_decay": 0.0001,
+      "batch_size": 4,
+      "pilot_val_loss": 6.9622
+    },
+    {
+      "name": "SGD_lr5e-3_b4",
+      "optimizer": "SGD",
+      "lr": 0.005,
+      "momentum": 0.9,
+      "weight_decay": 0.0005,
+      "batch_size": 4,
+      "pilot_val_loss": 6.9002
+    }
+  ],
+  "selected_best": {
+    "name": "AdamW_lr1e-3_b4",
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0005,
+    "batch_size": 4
+  },
+  "timestamp": "2026-09-30 00:06:54"
+}

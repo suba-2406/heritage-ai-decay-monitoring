@@ -1,0 +1,193 @@
+{
+  "filename": "IMG_20260624_133121.jpg",
+  "rel_path": "market hanuman\\IMG_20260624_133121.jpg",
+  "site": "market hanuman",
+  "width": 3072,
+  "height": 4096,
+  "status": "VERIFIED_DEFECT",
+  "boxes": [
+    {
+      "xmin": 0.0,
+      "ymin": 3936.0,
+      "xmax": 96.0,
+      "ymax": 4096.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.72,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2784.0,
+      "ymin": 1312.0,
+      "xmax": 2976.0,
+      "ymax": 1440.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.71,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 0.0,
+      "ymin": 3616.0,
+      "xmax": 160.0,
+      "ymax": 3744.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.7,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 480.0,
+      "ymin": 3360.0,
+      "xmax": 1184.0,
+      "ymax": 3488.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.69,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 0.0,
+      "ymin": 1824.0,
+      "xmax": 736.0,
+      "ymax": 2400.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.68,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 736.0,
+      "ymin": 2208.0,
+      "xmax": 1312.0,
+      "ymax": 2784.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.68,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 672.0,
+      "ymin": 2976.0,
+      "xmax": 1312.0,
+      "ymax": 3296.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1696.0,
+      "ymin": 1824.0,
+      "xmax": 2016.0,
+      "ymax": 2144.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.66,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1952.0,
+      "ymin": 2208.0,
+      "xmax": 2848.0,
+      "ymax": 2976.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.66,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1952.0,
+      "ymin": 3040.0,
+      "xmax": 2784.0,
+      "ymax": 3296.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.66,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2592.0,
+      "ymin": 1056.0,
+      "xmax": 2784.0,
+      "ymax": 1248.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1248.0,
+      "ymin": 1824.0,
+      "xmax": 1568.0,
+      "ymax": 2144.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1376.0,
+      "ymin": 1632.0,
+      "xmax": 1568.0,
+      "ymax": 1760.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.64,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1696.0,
+      "ymin": 1632.0,
+      "xmax": 2016.0,
+      "ymax": 1824.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.64,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 608.0,
+      "ymin": 4000.0,
+      "xmax": 800.0,
+      "ymax": 4096.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.64,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 81.0,
+      "ymin": 103.0,
+      "xmax": 595.0,
+      "ymax": 1534.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 535.0,
+      "ymin": 51.0,
+      "xmax": 2429.0,
+      "ymax": 300.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 2626.0,
+      "ymin": 77.0,
+      "xmax": 2994.0,
+      "ymax": 840.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    }
+  ],
+  "reviewer": "Human Reviewer",
+  "review_timestamp": "2026-09-29T17:33:42.984Z",
+  "notes": null
+}

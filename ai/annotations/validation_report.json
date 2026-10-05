@@ -1,0 +1,17 @@
+{
+  "target_images": 307,
+  "annotated_images": 307,
+  "missing_annotations_count": 0,
+  "orphaned_annotations_count": 0,
+  "total_boxes": 4593,
+  "class_distribution": {
+    "Seepage": 3940,
+    "Crack": 332,
+    "Moss": 321,
+    "Normal": 0
+  },
+  "error_files_count": 0,
+  "warning_files_count": 0,
+  "errors": {},
+  "warnings": {}
+}

@@ -1,0 +1,63 @@
+<?xml version="1.0" ?>
+<annotation>
+  <folder>big temple</folder>
+  <filename>IMG_20260622_173552.jpg</filename>
+  <path>c:\Users\subaj\OneDrive\Desktop\intern\TEMPLE\big temple\IMG_20260622_173552.jpg</path>
+  <source>
+    <database>Tamil Nadu Heritage Monuments</database>
+  </source>
+  <size>
+    <width>3072</width>
+    <height>4096</height>
+    <depth>3</depth>
+  </size>
+  <segmented>0</segmented>
+  <object>
+    <name>Moss</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>2336</xmin>
+      <ymin>2208</ymin>
+      <xmax>2528</xmax>
+      <ymax>2336</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>Seepage</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>2464</xmin>
+      <ymin>3616</ymin>
+      <xmax>2912</xmax>
+      <ymax>4096</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>Seepage</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>2144</xmin>
+      <ymin>3232</ymin>
+      <xmax>2528</xmax>
+      <ymax>3552</ymax>
+    </bndbox>
+  </object>
+  <object>
+    <name>Seepage</name>
+    <pose>Unspecified</pose>
+    <truncated>0</truncated>
+    <difficult>0</difficult>
+    <bndbox>
+      <xmin>672</xmin>
+      <ymin>3680</ymin>
+      <xmax>864</xmax>
+      <ymax>4000</ymax>
+    </bndbox>
+  </object>
+</annotation>

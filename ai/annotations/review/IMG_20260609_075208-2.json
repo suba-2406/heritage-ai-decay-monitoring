@@ -1,0 +1,243 @@
+{
+  "filename": "IMG_20260609_075208-2.jpg",
+  "rel_path": "big temple\\IMG_20260609_075208-2.jpg",
+  "site": "big temple",
+  "width": 3072,
+  "height": 4096,
+  "status": "VERIFIED_DEFECT",
+  "boxes": [
+    {
+      "xmin": 0.0,
+      "ymin": 1120.0,
+      "xmax": 928.0,
+      "ymax": 1952.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.71,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2976.0,
+      "ymin": 2976.0,
+      "xmax": 3072.0,
+      "ymax": 3168.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.7,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 0.0,
+      "ymin": 2528.0,
+      "xmax": 544.0,
+      "ymax": 3552.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.69,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2336.0,
+      "ymin": 160.0,
+      "xmax": 2848.0,
+      "ymax": 480.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2272.0,
+      "ymin": 1376.0,
+      "xmax": 2912.0,
+      "ymax": 1888.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1120.0,
+      "ymin": 2080.0,
+      "xmax": 1312.0,
+      "ymax": 2336.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 352.0,
+      "ymin": 3680.0,
+      "xmax": 672.0,
+      "ymax": 4096.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 800.0,
+      "ymin": 3744.0,
+      "xmax": 928.0,
+      "ymax": 3936.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2400.0,
+      "ymin": 416.0,
+      "xmax": 2592.0,
+      "ymax": 1184.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1824.0,
+      "ymin": 1376.0,
+      "xmax": 2208.0,
+      "ymax": 1760.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1696.0,
+      "ymin": 1760.0,
+      "xmax": 1824.0,
+      "ymax": 1952.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 544.0,
+      "ymin": 2208.0,
+      "xmax": 864.0,
+      "ymax": 2528.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1888.0,
+      "ymin": 2400.0,
+      "xmax": 2208.0,
+      "ymax": 2912.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 800.0,
+      "ymin": 3296.0,
+      "xmax": 992.0,
+      "ymax": 3552.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2592.0,
+      "ymin": 3360.0,
+      "xmax": 2912.0,
+      "ymax": 3552.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1452.0,
+      "ymin": 1028.0,
+      "xmax": 1717.0,
+      "ymax": 1371.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 1829.0,
+      "ymin": 206.0,
+      "xmax": 1872.0,
+      "ymax": 223.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 1743.0,
+      "ymin": 240.0,
+      "xmax": 2223.0,
+      "ymax": 677.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 1863.0,
+      "ymin": 703.0,
+      "xmax": 2223.0,
+      "ymax": 857.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 29.0,
+      "ymin": 540.0,
+      "xmax": 235.0,
+      "ymax": 1011.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 2472.0,
+      "ymin": 2451.0,
+      "xmax": 2934.0,
+      "ymax": 2862.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 2900.0,
+      "ymin": 1971.0,
+      "xmax": 3029.0,
+      "ymax": 2185.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 3037.0,
+      "ymin": 4036.0,
+      "xmax": 3054.0,
+      "ymax": 4053.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    }
+  ],
+  "reviewer": "Human Reviewer",
+  "review_timestamp": "2026-09-29T17:30:06.769Z",
+  "notes": null
+}

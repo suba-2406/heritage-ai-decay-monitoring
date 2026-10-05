@@ -1,0 +1,213 @@
+{
+  "filename": "IMG_20260624_132604.jpg",
+  "rel_path": "market hanuman\\IMG_20260624_132604.jpg",
+  "site": "market hanuman",
+  "width": 3072,
+  "height": 4096,
+  "status": "VERIFIED_DEFECT",
+  "boxes": [
+    {
+      "xmin": 2848.0,
+      "ymin": 3424.0,
+      "xmax": 3072.0,
+      "ymax": 3680.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.73,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1696.0,
+      "ymin": 3744.0,
+      "xmax": 2464.0,
+      "ymax": 4000.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.7,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 608.0,
+      "ymin": 3744.0,
+      "xmax": 1120.0,
+      "ymax": 3936.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.69,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 32.0,
+      "ymin": 3424.0,
+      "xmax": 224.0,
+      "ymax": 3744.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 224.0,
+      "ymin": 3424.0,
+      "xmax": 416.0,
+      "ymax": 3680.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.66,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2080.0,
+      "ymin": 2400.0,
+      "xmax": 2528.0,
+      "ymax": 2720.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 992.0,
+      "ymin": 3488.0,
+      "xmax": 1376.0,
+      "ymax": 3808.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.65,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1504.0,
+      "ymin": 3296.0,
+      "xmax": 2016.0,
+      "ymax": 3808.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.64,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2656.0,
+      "ymin": 3360.0,
+      "xmax": 2912.0,
+      "ymax": 3680.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.64,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1184.0,
+      "ymin": 224.0,
+      "xmax": 1952.0,
+      "ymax": 736.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.63,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1632.0,
+      "ymin": 2784.0,
+      "xmax": 2144.0,
+      "ymax": 3104.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.62,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2400.0,
+      "ymin": 3424.0,
+      "xmax": 2720.0,
+      "ymax": 3744.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.6,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2336.0,
+      "ymin": 2272.0,
+      "xmax": 2464.0,
+      "ymax": 2464.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.59,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 608.0,
+      "ymin": 2784.0,
+      "xmax": 1632.0,
+      "ymax": 3104.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.59,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1248.0,
+      "ymin": 3360.0,
+      "xmax": 1440.0,
+      "ymax": 3552.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.59,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2418.0,
+      "ymin": 1011.0,
+      "xmax": 2958.0,
+      "ymax": 2031.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 113.0,
+      "ymin": 1448.0,
+      "xmax": 619.0,
+      "ymax": 2571.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 696.0,
+      "ymin": 1028.0,
+      "xmax": 1218.0,
+      "ymax": 1997.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 798.0,
+      "ymin": 2245.0,
+      "xmax": 1261.0,
+      "ymax": 2691.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 1947.0,
+      "ymin": 840.0,
+      "xmax": 2341.0,
+      "ymax": 2065.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    }
+  ],
+  "reviewer": "Human Reviewer",
+  "review_timestamp": "2026-09-29T17:37:17.652Z",
+  "notes": null
+}

@@ -1,0 +1,2 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation><filename>IMG_20260609_074320-2.jpg</filename><size><width>320</width><height>320</height><depth>3</depth></size><object><name>Seepage</name><bndbox><xmin>257</xmin><ymin>292</ymin><xmax>277</xmax><ymax>312</ymax></bndbox></object><object><name>Crack</name><bndbox><xmin>217</xmin><ymin>78</ymin><xmax>243</xmax><ymax>88</ymax></bndbox></object><object><name>Seepage</name><bndbox><xmin>56</xmin><ymin>280</ymin><xmax>109</xmax><ymax>314</ymax></bndbox></object></annotation>

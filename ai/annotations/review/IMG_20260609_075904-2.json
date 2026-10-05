@@ -1,0 +1,113 @@
+{
+  "filename": "IMG_20260609_075904-2.jpg",
+  "rel_path": "big temple\\IMG_20260609_075904-2.jpg",
+  "site": "big temple",
+  "width": 3072,
+  "height": 4096,
+  "status": "VERIFIED_DEFECT",
+  "boxes": [
+    {
+      "xmin": 1440.0,
+      "ymin": 1376.0,
+      "xmax": 1568.0,
+      "ymax": 1568.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.63,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 928.0,
+      "ymin": 0.0,
+      "xmax": 1120.0,
+      "ymax": 96.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2848.0,
+      "ymin": 2656.0,
+      "xmax": 2976.0,
+      "ymax": 2848.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1888.0,
+      "ymin": 0.0,
+      "xmax": 2080.0,
+      "ymax": 96.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.57,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1376.0,
+      "ymin": 1696.0,
+      "xmax": 1568.0,
+      "ymax": 1888.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.56,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1408.0,
+      "ymin": 2039.0,
+      "xmax": 1767.0,
+      "ymax": 2494.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 1785.0,
+      "ymin": 2502.0,
+      "xmax": 2333.0,
+      "ymax": 2905.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 2702.0,
+      "ymin": 2905.0,
+      "xmax": 2959.0,
+      "ymax": 3333.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 242.0,
+      "ymin": 771.0,
+      "xmax": 439.0,
+      "ymax": 1071.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    },
+    {
+      "xmin": 1211.0,
+      "ymin": 977.0,
+      "xmax": 1442.0,
+      "ymax": 1748.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    }
+  ],
+  "reviewer": "Human Reviewer",
+  "review_timestamp": "2026-09-29T17:36:08.606Z",
+  "notes": null
+}

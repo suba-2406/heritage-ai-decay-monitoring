@@ -1,0 +1,75 @@
+{
+  "model_architecture": "SSDLite320_MobileNet_V3_Large_Weighted",
+  "class_mapping": {
+    "Normal": 0,
+    "Crack": 1,
+    "Moss": 2,
+    "Seepage": 3
+  },
+  "classes": [
+    "Normal",
+    "Crack",
+    "Moss",
+    "Seepage"
+  ],
+  "image_size": [
+    320,
+    320,
+    3
+  ],
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0005,
+  "batch_size": 4,
+  "epochs": 12,
+  "scheduler": "cosine",
+  "augmentation": "HFlip+VFlip+ColorJitter",
+  "sampling_strategy": "class_aware",
+  "loss_weights": [
+    1.0,
+    3.5,
+    3.5,
+    1.0
+  ],
+  "confidence_threshold": 0.25,
+  "nms_threshold": 0.45,
+  "random_seed": 42,
+  "validation_metrics": {
+    "mAP_50": 0.0153,
+    "macro_f1": 0.082,
+    "accuracy": 0.7447,
+    "per_class": {
+      "Crack": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "ap": 0.0,
+        "tp": 0,
+        "fp": 89,
+        "fn": 39,
+        "gt": 39
+      },
+      "Moss": {
+        "precision": 0.0558,
+        "recall": 0.3143,
+        "f1": 0.0948,
+        "ap": 0.0175,
+        "tp": 11,
+        "fp": 186,
+        "fn": 24,
+        "gt": 35
+      },
+      "Seepage": {
+        "precision": 0.1055,
+        "recall": 0.2674,
+        "f1": 0.1513,
+        "ap": 0.0282,
+        "tp": 165,
+        "fp": 1399,
+        "fn": 452,
+        "gt": 617
+      }
+    }
+  },
+  "winning_candidate": "Candidate_A"
+}

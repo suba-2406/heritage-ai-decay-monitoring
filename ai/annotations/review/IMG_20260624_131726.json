@@ -1,0 +1,163 @@
+{
+  "filename": "IMG_20260624_131726.jpg",
+  "rel_path": "rathnagirishwarar kovil near peter school\\IMG_20260624_131726.jpg",
+  "site": "rathnagirishwarar kovil near peter school",
+  "width": 3072,
+  "height": 4096,
+  "status": "VERIFIED_DEFECT",
+  "boxes": [
+    {
+      "xmin": 2400.0,
+      "ymin": 3936.0,
+      "xmax": 2848.0,
+      "ymax": 4096.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.81,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2080.0,
+      "ymin": 0.0,
+      "xmax": 3072.0,
+      "ymax": 608.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.8,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 736.0,
+      "ymin": 1184.0,
+      "xmax": 1632.0,
+      "ymax": 2080.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.79,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1952.0,
+      "ymin": 1312.0,
+      "xmax": 2336.0,
+      "ymax": 1760.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.76,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2848.0,
+      "ymin": 1376.0,
+      "xmax": 3040.0,
+      "ymax": 1760.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.73,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 224.0,
+      "ymin": 2016.0,
+      "xmax": 544.0,
+      "ymax": 2528.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.72,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 288.0,
+      "ymin": 672.0,
+      "xmax": 1440.0,
+      "ymax": 1760.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.71,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2400.0,
+      "ymin": 1440.0,
+      "xmax": 2912.0,
+      "ymax": 2208.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.71,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2656.0,
+      "ymin": 2336.0,
+      "xmax": 3040.0,
+      "ymax": 2656.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.71,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2080.0,
+      "ymin": 2848.0,
+      "xmax": 2400.0,
+      "ymax": 3040.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.71,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1888.0,
+      "ymin": 1312.0,
+      "xmax": 2400.0,
+      "ymax": 1824.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.7,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2976.0,
+      "ymin": 1632.0,
+      "xmax": 3072.0,
+      "ymax": 1888.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.69,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1632.0,
+      "ymin": 1824.0,
+      "xmax": 2144.0,
+      "ymax": 2208.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.69,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1056.0,
+      "ymin": 1696.0,
+      "xmax": 1440.0,
+      "ymax": 1888.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.68,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2656.0,
+      "ymin": 3040.0,
+      "xmax": 3072.0,
+      "ymax": 3360.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    }
+  ],
+  "reviewer": "Human Reviewer",
+  "review_timestamp": "2026-09-29T17:26:50.621Z",
+  "notes": null
+}

@@ -1,0 +1,6 @@
+Model,Accuracy,Macro_Precision,Macro_Recall,Macro_F1,Weighted_F1,ROC_AUC
+Support Vector Machine (SVM),0.6889,0.4247,0.4333,0.429,0.6801,0.7109
+k-Nearest Neighbors (KNN),0.7556,0.4768,0.4667,0.4679,0.7367,0.5849
+Random Forest,0.6222,0.3873,0.4,0.3919,0.6233,0.6711
+Standard CNN (MobileNetV3),0.7556,0.5256,0.4413,0.4469,0.7159,0.5989
+SSD (Single Shot MultiBox Detector),0.6667,0.1667,0.25,0.2,0.5333,0.5048

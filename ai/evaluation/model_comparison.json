@@ -1,0 +1,57 @@
+{
+  "experiment": "Senmozhi Work II Comparative Evaluation",
+  "test_samples": 45,
+  "classes": [
+    "Normal",
+    "Crack",
+    "Moss",
+    "Seepage"
+  ],
+  "models_evaluated": [
+    {
+      "Model": "Support Vector Machine (SVM)",
+      "Accuracy": 0.6889,
+      "Macro_Precision": 0.4247,
+      "Macro_Recall": 0.4333,
+      "Macro_F1": 0.429,
+      "Weighted_F1": 0.6801,
+      "ROC_AUC": 0.7109
+    },
+    {
+      "Model": "k-Nearest Neighbors (KNN)",
+      "Accuracy": 0.7556,
+      "Macro_Precision": 0.4768,
+      "Macro_Recall": 0.4667,
+      "Macro_F1": 0.4679,
+      "Weighted_F1": 0.7367,
+      "ROC_AUC": 0.5849
+    },
+    {
+      "Model": "Random Forest",
+      "Accuracy": 0.6222,
+      "Macro_Precision": 0.3873,
+      "Macro_Recall": 0.4,
+      "Macro_F1": 0.3919,
+      "Weighted_F1": 0.6233,
+      "ROC_AUC": 0.6711
+    },
+    {
+      "Model": "Standard CNN (MobileNetV3)",
+      "Accuracy": 0.7556,
+      "Macro_Precision": 0.5256,
+      "Macro_Recall": 0.4413,
+      "Macro_F1": 0.4469,
+      "Weighted_F1": 0.7159,
+      "ROC_AUC": 0.5989
+    },
+    {
+      "Model": "SSD (Single Shot MultiBox Detector)",
+      "Accuracy": 0.6667,
+      "Macro_Precision": 0.1667,
+      "Macro_Recall": 0.25,
+      "Macro_F1": 0.2,
+      "Weighted_F1": 0.5333,
+      "ROC_AUC": 0.5048
+    }
+  ]
+}

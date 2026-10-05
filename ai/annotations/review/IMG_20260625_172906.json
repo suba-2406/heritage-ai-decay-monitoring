@@ -1,0 +1,173 @@
+{
+  "filename": "IMG_20260625_172906.jpg",
+  "rel_path": "kasiviswa nadhar therku vedhi rd , next to micheal tea shop\\IMG_20260625_172906.jpg",
+  "site": "kasiviswa nadhar therku vedhi rd , next to micheal tea shop",
+  "width": 3072,
+  "height": 4096,
+  "status": "VERIFIED_DEFECT",
+  "boxes": [
+    {
+      "xmin": 1568.0,
+      "ymin": 1632.0,
+      "xmax": 2080.0,
+      "ymax": 2144.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.78,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1184.0,
+      "ymin": 3616.0,
+      "xmax": 1312.0,
+      "ymax": 3808.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.76,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 0.0,
+      "ymin": 0.0,
+      "xmax": 1376.0,
+      "ymax": 608.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.73,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1888.0,
+      "ymin": 0.0,
+      "xmax": 2144.0,
+      "ymax": 160.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.73,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 800.0,
+      "ymin": 1632.0,
+      "xmax": 1312.0,
+      "ymax": 2272.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.72,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 736.0,
+      "ymin": 0.0,
+      "xmax": 2272.0,
+      "ymax": 1376.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.72,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2784.0,
+      "ymin": 224.0,
+      "xmax": 3072.0,
+      "ymax": 352.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.69,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2080.0,
+      "ymin": 0.0,
+      "xmax": 2848.0,
+      "ymax": 416.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.68,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2272.0,
+      "ymin": 224.0,
+      "xmax": 3072.0,
+      "ymax": 1376.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.68,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 864.0,
+      "ymin": 3488.0,
+      "xmax": 1056.0,
+      "ymax": 3744.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 992.0,
+      "ymin": 3744.0,
+      "xmax": 1184.0,
+      "ymax": 3872.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 0.0,
+      "ymin": 416.0,
+      "xmax": 672.0,
+      "ymax": 1568.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.67,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 480.0,
+      "ymin": 3104.0,
+      "xmax": 736.0,
+      "ymax": 3296.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 0.66,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2592.0,
+      "ymin": 0.0,
+      "xmax": 3072.0,
+      "ymax": 288.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.66,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1888.0,
+      "ymin": 2592.0,
+      "xmax": 2016.0,
+      "ymax": 2784.0,
+      "label": "Seepage",
+      "class_id": 3,
+      "confidence": 0.66,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2027.0,
+      "ymin": 3779.0,
+      "xmax": 2901.0,
+      "ymax": 3950.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    }
+  ],
+  "reviewer": "Human Reviewer",
+  "review_timestamp": "2026-09-29T17:50:04.501Z",
+  "notes": null
+}

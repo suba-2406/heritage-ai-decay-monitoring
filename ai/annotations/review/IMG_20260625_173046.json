@@ -1,0 +1,133 @@
+{
+  "filename": "IMG_20260625_173046.jpg",
+  "rel_path": "kasiviswa nadhar therku vedhi rd , next to micheal tea shop\\IMG_20260625_173046.jpg",
+  "site": "kasiviswa nadhar therku vedhi rd , next to micheal tea shop",
+  "width": 3072,
+  "height": 4096,
+  "status": "VERIFIED_DEFECT",
+  "boxes": [
+    {
+      "xmin": 1568.0,
+      "ymin": 1184.0,
+      "xmax": 1760.0,
+      "ymax": 1440.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.59,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2592.0,
+      "ymin": 1568.0,
+      "xmax": 2720.0,
+      "ymax": 1760.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.59,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 0.0,
+      "ymin": 1184.0,
+      "xmax": 96.0,
+      "ymax": 1376.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2208.0,
+      "ymin": 1376.0,
+      "xmax": 2400.0,
+      "ymax": 1760.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 2656.0,
+      "ymin": 2464.0,
+      "xmax": 2848.0,
+      "ymax": 2784.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 608.0,
+      "ymin": 3168.0,
+      "xmax": 736.0,
+      "ymax": 3360.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1568.0,
+      "ymin": 3232.0,
+      "xmax": 1952.0,
+      "ymax": 3488.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 480.0,
+      "ymin": 3296.0,
+      "xmax": 672.0,
+      "ymax": 3424.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1568.0,
+      "ymin": 4000.0,
+      "xmax": 1760.0,
+      "ymax": 4096.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.58,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 736.0,
+      "ymin": 928.0,
+      "xmax": 864.0,
+      "ymax": 1120.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.57,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 1376.0,
+      "ymin": 3296.0,
+      "xmax": 1504.0,
+      "ymax": 3488.0,
+      "label": "Crack",
+      "class_id": 1,
+      "confidence": 0.57,
+      "source": "AI_PROPOSAL"
+    },
+    {
+      "xmin": 509.0,
+      "ymin": 1388.0,
+      "xmax": 2463.0,
+      "ymax": 2905.0,
+      "label": "Moss",
+      "class_id": 2,
+      "confidence": 1.0,
+      "source": "MANUAL_DRAWN"
+    }
+  ],
+  "reviewer": "Human Reviewer",
+  "review_timestamp": "2026-09-29T17:38:59.923Z",
+  "notes": null
+}

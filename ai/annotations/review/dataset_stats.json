@@ -1,16 +1,27 @@
 {
   "total_unique_images": 307,
-  "verified_normal_images": 0,
-  "verified_defect_images": 0,
-  "pending_review_images": 307,
+  "verified_normal_images": 2,
+  "verified_defect_images": 305,
+  "pending_review_images": 0,
   "flagged_ambiguous_images": 0,
-  "total_bounding_boxes": 0,
+  "total_bounding_boxes": 4621,
   "boxes_by_class": {
-    "Crack": 0,
-    "Moss": 0,
-    "Seepage": 0
+    "Crack": 346,
+    "Moss": 321,
+    "Seepage": 3954
   },
-  "images_with_multiple_classes": 0,
-  "images_with_multiple_boxes": 0,
-  "suspicious_cases": []
+  "images_with_multiple_classes": 157,
+  "images_with_multiple_boxes": 305,
+  "suspicious_cases": [
+    {
+      "filename": "IMG_20260609_075208-2.jpg",
+      "class": "Seepage",
+      "issue": "Extremely tiny box: 43.0x17.0 pixels"
+    },
+    {
+      "filename": "IMG_20260609_075208-2.jpg",
+      "class": "Seepage",
+      "issue": "Extremely tiny box: 17.0x17.0 pixels"
+    }
+  ]
 }

@@ -1,0 +1,15 @@
+metric,phase3_baseline,phase3b_improved,delta_or_status
+mAP@0.5,0.0139,0.0141,+1.4%
+Crack Precision,0.0,0.0194,UNLOCKED (+0.0194)
+Crack Recall,0.0,0.04,"UNLOCKED (2 TPs, was 0)"
+Crack F1,0.0,0.0261,UNLOCKED (+0.0261)
+Crack AP@50,0.0,0.0008,UNLOCKED (+0.0008)
+Moss Precision,0.1212,0.0505,-0.0707
+Moss Recall,0.093,0.2326,+150.1% (10 TPs vs 4 TPs)
+Moss F1,0.1053,0.083,-0.0223
+Moss AP@50,0.0113,0.0117,+3.5%
+Seepage Precision,0.1462,0.1273,-0.0189
+Seepage Recall,0.2084,0.2329,+11.8% (133 TPs vs 119 TPs)
+Seepage F1,0.1718,0.1646,-0.0072
+Image Accuracy,66.67%,66.67%,Maintained (66.67%)
+ROC-AUC,0.5048,0.6201,+22.8%

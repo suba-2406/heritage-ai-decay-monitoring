@@ -1,0 +1,118 @@
+{
+  "model": "SSDLite320_MobileNet_V3_Large",
+  "checkpoint": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\training\\checkpoints\\ssd_monument_decay_best.pth",
+  "test_image_count": 45,
+  "object_detection_metrics": {
+    "mAP_50": 0.0139,
+    "per_class": {
+      "Crack": {
+        "total_ground_truth_boxes": 50,
+        "true_positives": 0,
+        "false_positives": 0,
+        "false_negatives": 50,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1_score": 0.0,
+        "ap50": 0.0
+      },
+      "Moss": {
+        "total_ground_truth_boxes": 43,
+        "true_positives": 4,
+        "false_positives": 29,
+        "false_negatives": 39,
+        "precision": 0.1212,
+        "recall": 0.093,
+        "f1_score": 0.1053,
+        "ap50": 0.0113
+      },
+      "Seepage": {
+        "total_ground_truth_boxes": 571,
+        "true_positives": 119,
+        "false_positives": 695,
+        "false_negatives": 452,
+        "precision": 0.1462,
+        "recall": 0.2084,
+        "f1_score": 0.1718,
+        "ap50": 0.0305
+      }
+    }
+  },
+  "image_level_classification_metrics": {
+    "accuracy": 0.6667,
+    "macro_precision": 0.1667,
+    "macro_recall": 0.25,
+    "macro_f1": 0.2,
+    "weighted_f1": 0.5333,
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        14
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        30
+      ]
+    ],
+    "roc_auc_per_class": {
+      "Normal": 0.5,
+      "Crack": 0.5,
+      "Moss": "N/A (No test samples)",
+      "Seepage": 0.5144
+    },
+    "detailed_classification_report": {
+      "Normal": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 1.0
+      },
+      "Crack": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 14.0
+      },
+      "Moss": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1-score": 0.0,
+        "support": 0.0
+      },
+      "Seepage": {
+        "precision": 0.6666666666666666,
+        "recall": 1.0,
+        "f1-score": 0.8,
+        "support": 30.0
+      },
+      "accuracy": 0.6666666666666666,
+      "macro avg": {
+        "precision": 0.16666666666666666,
+        "recall": 0.25,
+        "f1-score": 0.2,
+        "support": 45.0
+      },
+      "weighted avg": {
+        "precision": 0.4444444444444444,
+        "recall": 0.6666666666666666,
+        "f1-score": 0.5333333333333333,
+        "support": 45.0
+      }
+    }
+  }
+}

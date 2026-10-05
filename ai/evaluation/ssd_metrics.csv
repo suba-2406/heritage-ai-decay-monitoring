@@ -1,0 +1,14 @@
+metric,value
+mAP@0.5,0.0139
+accuracy,0.6667
+macro_f1,0.2
+weighted_f1,0.5333
+Crack_precision,0.0
+Crack_recall,0.0
+Crack_ap50,0.0
+Moss_precision,0.1212
+Moss_recall,0.093
+Moss_ap50,0.0113
+Seepage_precision,0.1462
+Seepage_recall,0.2084
+Seepage_ap50,0.0305

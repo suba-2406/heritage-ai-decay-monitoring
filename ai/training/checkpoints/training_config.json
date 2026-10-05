@@ -1,0 +1,28 @@
+{
+  "model_architecture": "SSDLite320_MobileNet_V3_Large",
+  "pretrained_backbone": "MobileNet_V3_Large_Weights.DEFAULT",
+  "num_classes": 4,
+  "class_mapping": {
+    "Normal": 0,
+    "Crack": 1,
+    "Moss": 2,
+    "Seepage": 3
+  },
+  "input_resolution": [
+    320,
+    320,
+    3
+  ],
+  "best_hyperparameters": {
+    "name": "AdamW_lr1e-3_b4",
+    "optimizer": "AdamW",
+    "lr": 0.001,
+    "weight_decay": 0.0005,
+    "batch_size": 4
+  },
+  "total_epochs": 15,
+  "best_val_loss": 5.703,
+  "final_train_loss": 3.3054,
+  "checkpoint_path": "C:\\Users\\subaj\\OneDrive\\Desktop\\intern\\heritage-ai-decay-monitoring\\ai\\training\\checkpoints\\ssd_monument_decay_best.pth",
+  "total_training_time_sec": 505.68
+}
